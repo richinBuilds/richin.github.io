@@ -1,0 +1,631 @@
+/*styles for body and html*/
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+/*style to center content and control the width*/
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Navigation Bar styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav h1 {
+    margin: 0;
+    float: left;
+    font-size: 1.8rem;
+}
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #00bcd4; /* A nice accent color for hover */
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover; /* Placeholder image, replace with your own! */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh; /* Make it full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+.hero .container {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.hero a {
+    display: inline-block;
+    background: #00bcd4; /* Accent color */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero a:hover {
+    background: #0097a7; /* Darker shade on hover */
+    transform: translateY(-3px);
+}
+/*About me*/
+section {
+    padding: 60px 0; /* Top and bottom padding for all sections */
+    background-color: #fff; /* Default background for sections */
+    border-bottom: 1px solid #eee; /* Light separator between sections */
+}
+section:nth-of-type(even) { /* Alternate background for even sections */
+    background-color: #f9f9f9;
+}
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+}
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #00bcd4; /* Accent color for the underline */
+    border-radius: 2px;
+}
+
+/* About Section specific styles */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section styles */
+
+/* Projects Section styles (updated for images and logos) */
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* padding: 30px; Remove direct padding to control content spacing */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensures image corners are rounded with card */
+    display: flex; /* Use flexbox to organize content vertically */
+    flex-direction: column;
+    justify-content: space-between; /* Push link to bottom if content varies */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without distortion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 20px; /* Space between image and title */
+}
+
+.project-card h3 {
+    color: #00bcd4; /* Accent color for project titles */
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    padding: 0 20px; /* Add horizontal padding for text */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows paragraph to take up available space */
+    padding: 0 20px; /* Add horizontal padding for text */
+}
+
+.project-card .tech-logos {
+    margin-top: 15px;
+    margin-bottom: 25px; /* Space between logos and button */
+    padding: 0 20px; /* Add horizontal padding for logos */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow logos to wrap to the next line */
+    gap: 10px; /* Space between logos */
+}
+
+.project-card .tech-logo {
+    height: 30px; /* Adjust size as needed */
+    width: auto;
+    opacity: 0.7; /* Slightly dim logos */
+    transition: opacity 0.3s ease;
+}
+
+.project-card .tech-logo:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.project-card a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-top: auto; /* Push button to the bottom */
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.project-card a:hover {
+    background: #555;
+}
+
+/* Skills Section styles */
+
+/* Skills Section styles (updated for categories and logos) */
+#skills .skills-content-wrapper {
+    background-color: #e9e9e9; /* A slightly darker background */
+    padding: 50px 30px; /* Internal padding for the wrapper */
+    border-radius: 12px; /* Slightly rounded corners for the wrapper */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    margin-top: 20px; /* Space from the "My Skills" heading */
+    margin-bottom: 20px; /* Space before the next section */
+}
+
+#skills .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for categories */
+    gap: 40px;
+    /* margin-top: 20px; Remove this margin as it's now handled by the wrapper padding */
+}
+
+#skills .nav-button {
+    display: block; /* Make the button take full width to center it better */
+    width: fit-content; /* Adjust width to content */
+    margin: 40px auto 0 auto; /* Center the button and add top margin */
+    background: #00bcd4; /* Accent color */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#skills .nav-button:hover {
+    background: #0097a7; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button to trigger skills display */
+#showSkillsBtn {
+    display: block; /* Make the button take full width to center it better */
+    width: fit-content; /* Adjust width to content */
+    margin: 40px auto 0 auto; /* Center the button and add top margin */
+    background: #00bcd4; /* Accent color */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate it's clickable */
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#showSkillsBtn:hover {
+    background: #0097a7; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Skills Section - Initial hidden state and transition */
+#skills {
+    /* Ensure general section padding/background from previous steps is applied */
+    opacity: 0; /* Start invisible */
+    max-height: 0; /* Collapse height */
+    overflow: hidden; /* Hide overflow content */
+    transition: opacity 0.6s ease-out, max-height 0.6s ease-out, padding 0.6s ease-out; /* Smooth transition */
+    padding-top: 0; /* Remove padding when hidden */
+    padding-bottom: 0; /* Remove padding when hidden */
+}
+
+#skills.skills-visible {
+    opacity: 1; /* Become fully visible */
+    max-height: 1200px; /* Max height to allow content to show (adjust if your content is taller) */
+    padding: 60px 0; /* Restore padding when visible */
+}
+
+/* Re-add the previous skill styling for when it IS visible */
+#skills .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for categories */
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.skill-category h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.skill-category h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: #00bcd4; /* Accent color */
+    border-radius: 2px;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow skill items to wrap */
+    justify-content: center;
+    gap: 20px; /* Space between skill items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* Fixed width for consistent sizing */
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.skill-item img {
+    width: 50px; /* Size of the skill logo */
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    filter: grayscale(80%); /* Dim logos slightly when not hovered */
+    transition: filter 0.2s ease;
+}
+
+.skill-item:hover img {
+    filter: grayscale(0%); /* Full color on hover */
+}
+
+.skill-item span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Contact Section Social Links */
+#contact .contact-social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    gap: 30px; /* Space between the social icon links */
+    margin-top: 50px; /* Space from the intro paragraph */
+}
+
+.social-icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Default text color */
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon-link .fas,
+.social-icon-link .fab { /* Styles for the Font Awesome icons */
+    font-size: 3.5rem; /* Large icon size */
+    margin-bottom: 10px;
+    color: #00bcd4; /* Accent color for icons */
+    transition: color 0.3s ease;
+}
+
+.social-icon-link span {
+    font-weight: 500;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    color: #0097a7; /* Darker accent color for text on hover */
+}
+
+.social-icon-link:hover .fas,
+.social-icon-link:hover .fab {
+    color: #0097a7; /* Darker accent color for icon on hover */
+}
+
+/* You can target specific icons for different colors if desired, e.g.: */
+.social-icon-link[href^="mailto:"] .fas {
+    color: #D44638; /* Gmail red */
+}
+.social-icon-link[href*="linkedin.com"] .fab {
+    color: #0A66C2; /* LinkedIn blue */
+}
+.social-icon-link[href*="github.com"] .fab {
+    color: #181717; /* GitHub black */
+}
+/* On hover, they'll still go to the accent color defined above, or you can adjust */
+.social-icon-link[href^="mailto:"]:hover .fas,
+.social-icon-link[href*="linkedin.com"]:hover .fab,
+.social-icon-link[href*="github.com"]:hover .fab {
+    color: #0097a7; /* Or keep their brand color: #D44638, #0A66C2, #181717 */
+}
+
+/* Adjustments for the intro paragraph in contact section */
+#contact .contact-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Add bottom margin for spacing before links */
+    color: #555;
+}
+
+/*back to top button*/
+
+/* Back to Top Button styles */
+.back-to-top {
+    position: fixed; /* Stays in place when scrolling */
+    bottom: 30px; /* 30px from the bottom of the viewport */
+    right: 30px; /* 30px from the right of the viewport */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White arrow */
+    border: none;
+    border-radius: 50%; /* Makes it a perfect circle */
+    width: 50px; /* Size of the button */
+    height: 50px; /* Size of the button */
+    font-size: 1.8rem; /* Size of the arrow icon */
+    display: flex; /* Use flexbox to perfectly center the arrow */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer; /* Indicates it's clickable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions for hover and visibility */
+    z-index: 999; /* Ensures it stays on top of other content */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Allows clicks to pass through when hidden */
+}
+
+.back-to-top.show { /* This class is added by JavaScript */
+    opacity: 1; /* Make it visible */
+    pointer-events: auto; /* Allow clicks when visible */
+}
+
+.back-to-top:hover {
+    background-color: #00bcd4; /* Accent color on hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets in portrait, large phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make container wider on smaller screens to use more space */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    /* Navigation Bar */
+    nav {
+        text-align: center; /* Center nav content */
+        padding: 1rem 0.5rem;
+    }
+
+    nav h1 {
+        float: none; /* Remove float to allow centering */
+        margin-bottom: 10px; /* Space below title */
+    }
+
+    nav ul {
+        float: none; /* Remove float */
+        display: block; /* Make ul a block element */
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 0 0 10px 0; /* Add vertical spacing between nav items */
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 2.5rem; /* Smaller heading on tablets */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Smaller paragraph text */
+    }
+
+    /* General Section Headings */
+    section h2 {
+        font-size: 2rem; /* Smaller section headings */
+    }
+
+    /* Projects Grid */
+    #projects .project-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically (one column) */
+    }
+
+    /* Project Cards specific adjustments for smaller screens */
+    .project-card .project-image {
+        height: 250px; /* Adjust image height if needed for stacking */
+    }
+
+    /* Skills Categories Grid */
+    #skills .skills-categories {
+        grid-template-columns: 1fr; /* Stack skill categories vertically */
+        gap: 30px; /* Reduce gap between categories */
+    }
+
+    /* Skills Content Wrapper */
+    #skills .skills-content-wrapper {
+        padding: 30px 20px; /* Adjust internal padding for the skills box */
+    }
+
+    /* Contact Section Links */
+    #contact .contact-social-links {
+        flex-direction: column; /* Stack social links vertically */
+        gap: 20px; /* Adjust gap between stacked links */
+    }
+
+    /* Contact Form (if used) */
+    .contact-form {
+        padding: 20px; /* Reduce form padding */
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+        width: 45px; /* Slightly smaller button */
+        height: 45px;
+        font-size: 1.5rem; /* Smaller arrow */
+        bottom: 20px; /* Closer to bottom/right edge */
+        right: 20px;
+    }
+
+    /* Footer */
+    footer p {
+        margin-bottom: 5px; /* Reduce spacing in footer */
+    }
+}
+
+/* For even smaller screens (e.g., typical mobile phones) */
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero h2 {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce paragraph size */
+    }
+
+    /* General Section Headings */
+    section h2 {
+        font-size: 1.8rem; /* Further reduce section heading size */
+    }
+
+    /* Project Cards */
+    .project-card .project-image {
+        height: 180px; /* Adjust project image height for very small screens */
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem; /* Smaller project title */
+    }
+
+    /* Skill Items */
+    .skill-item {
+        width: 70px; /* Make skill items slightly smaller */
+    }
+
+    .skill-item img {
+        width: 40px; /* Smaller skill logos */
+        height: 40px;
+    }
+
+    .skill-item span {
+        font-size: 0.8rem; /* Smaller skill text */
+    }
+
+    /* Contact Social Icons */
+    .social-icon-link .fas,
+    .social-icon-link .fab {
+        font-size: 2.8rem; /* Smaller icons on very small screens */
+    }
+}

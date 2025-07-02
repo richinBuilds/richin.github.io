@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Your Name - Portfolio</title>
+       <!-- AOS Library for Scroll Animations -->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!-- Google Fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- Custom CSS -->
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+       <!-- Navigation Bar -->
+       <nav>
+           <div class="container">
+               <h1>Your Name</h1>
+               <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <!-- Hero Section -->
+       <section id="home" class="hero" data-aos="fade-up">
+           <div class="container">
+               <h2>Welcome to My Portfolio</h2>
+               <p>Hi, I'm Your Name, a passionate developer skilled in Python, Java, C#, and more.</p>
+               <a href="#projects">View My Work</a>
+           </div>
+       </section>
+
+       <!-- About Section -->
+       <section id="about" data-aos="fade-up" data-aos-delay="100">
+           <div class="container">
+               <h2>About Me</h2>
+               <p>I’m a Computer Programming graduate from Sheridan College, Brampton, with expertise in Python, Java, C#, SQL, and web development. I love building user-friendly applications and am excited to contribute to innovative tech projects.</p>
+           </div>
+       </section>
+
+       <!-- Projects Section -->
+       <section id="projects" data-aos="fade-up" data-aos-delay="200">
+           <div class="container">
+               <h2>My Projects</h2>
+               <div class="project-grid">
+                
+                   <!-- Project 1 -->
+                   <div class="project-card">
+                    <img src="images/task-app-preview.jpg" alt="Task Management App Preview" class="project-image">
+                    <h3>Task Management App</h3>
+                    <p>A full-stack app built with React and Node.js to manage tasks with user authentication.</p>
+                    <div class="tech-logos">
+                        <img src="icons/react-logo.svg" alt="React" class="tech-logo">
+                        <img src="icons/nodejs-logo.svg" alt="Node.js" class="tech-logo">
+                        <img src="icons/mongodb-logo.svg" alt="MongoDB" class="tech-logo">
+                    </div>
+                    <a href="https://github.com/yourusername/task-app">View on GitHub</a>
+                </div>
+                   <!-- Project 2 -->
+                   <div class="project-card">
+                    <img src="images/task-app-preview.jpg" alt="Task Management App Preview" class="project-image">
+                    <h3>Task Management App</h3>
+                    <p>A full-stack app built with React and Node.js to manage tasks with user authentication.</p>
+                    <div class="tech-logos">
+                        <img src="icons/react-logo.svg" alt="React" class="tech-logo">
+                        <img src="icons/nodejs-logo.svg" alt="Node.js" class="tech-logo">
+                        <img src="icons/mongodb-logo.svg" alt="MongoDB" class="tech-logo">
+                    </div>
+                    <a href="https://github.com/yourusername/task-app">View on GitHub</a>
+                </div>
+                   <!-- Add more projects here -->
+               </div>
+           </div>
+       </section>
+
+       <!-- Skills Section -->
+       <section id="skills-toggle-section"> <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <button id="showSkillsBtn" class="nav-button">Show My Skills</button>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-hidden" data-aos="fade-up" data-aos-delay="300">
+    <div class="container">
+      <div class="skills-content-wrapper">
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="icons/python-logo.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/java-logo.svg" alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/csharp-logo.svg" alt="C#">
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/javascript-logo.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/html5-logo.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/css3-logo.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="icons/react-logo.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/nodejs-logo.svg" alt="Node.js">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/express-logo.svg" alt="Express.js">
+                        <span>Express.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/bootstrap-logo.svg" alt="Bootstrap">
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="icons/mysql-logo.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/mongodb-logo.svg" alt="MongoDB">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/postgresql-logo.svg" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="icons/git-logo.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/docker-logo.svg" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/aws-logo.svg" alt="AWS">
+                        <span>AWS Basics</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="icons/jira-logo.svg" alt="Jira">
+                        <span>Jira</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+       <!-- Contact Section -->
+       <section id="contact" data-aos="fade-up" data-aos-delay="400">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to connect!</p>
+            <div class="contact-social-links">
+                <a href="mailto:richinprasad@gmail.com" class="social-icon-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/richin-richin-889a43104/" target="_blank" class="social-icon-link" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="social-icon-link" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                </div>
+        </div>
+    </section>
+
+       <!-- Back to Top Button -->
+       <button id="back-to-top" class="back-to-top">↑</button>
+
+      
+
+       <!-- JavaScript for Interactivity -->
+       <script>
+           // Initialize AOS
+           AOS.init();
+
+
+
+           // Back to Top Button
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    // Get the current scroll position (how far down the user has scrolled)
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    // Get the total height of the document (how tall the entire page content is)
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Get the height of the viewport (the visible area of the browser window)
+    const windowHeight = window.innerHeight;
+
+    // Calculate how much space is left to scroll to the bottom
+    // We'll show the button when the user is within a certain threshold from the bottom.
+    // Let's say, within 200 pixels of the bottom.
+    const scrollThresholdFromBottom = 200; // Adjust this value as needed
+
+    if ((scrollTop + windowHeight + scrollThresholdFromBottom) >= documentHeight) {
+        // User is near the bottom of the page
+        backToTop.classList.add('show');
+    } else {
+        // User is not near the bottom
+        backToTop.classList.remove('show');
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+});
+
+           const showSkillsBtn = document.getElementById('showSkillsBtn');
+    const skillsSection = document.getElementById('skills');
+
+    // Initially hide the skills section (handled by CSS, but good to re-affirm)
+    skillsSection.classList.add('skills-hidden');
+
+    showSkillsBtn.addEventListener('click', () => {
+        // Toggle the 'skills-visible' class
+        skillsSection.classList.toggle('skills-visible');
+
+        // Optional: Change button text
+        if (skillsSection.classList.contains('skills-visible')) {
+            showSkillsBtn.textContent = 'Hide My Skills';
+        } else {
+            showSkillsBtn.textContent = 'Show My Skills';
+        }
+
+        // Optional: Scroll to the skills section if it's being shown
+        if (skillsSection.classList.contains('skills-visible')) {
+            // Give a slight delay for the animation to start before scrolling
+            setTimeout(() => {
+                skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 600); // Match this delay to your CSS transition duration
+        }
+    });
+       </script>
+   </body>
+   </html>
