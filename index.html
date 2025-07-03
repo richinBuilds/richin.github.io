@@ -9,8 +9,10 @@
        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <!-- Google Fonts -->
        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <!-- Custom CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
        <link rel="stylesheet" href="styles.css">
@@ -26,6 +28,11 @@
                    <li><a href="#about">About</a></li>
                    <li><a href="#projects">Projects</a></li>
                    <li><a href="#contact">Contact</a></li>
+                   <li>
+                    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
                </ul>
            </div>
        </nav>
@@ -100,27 +107,27 @@
                 <h3>Languages</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <img src="icons/python-logo.svg" alt="Python">
+                        <i class="devicon-python-plain colored"></i>
                         <span>Python</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/java-logo.svg" alt="Java">
+                        <i class="devicon-java-plain colored"></i>
                         <span>Java</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/csharp-logo.svg" alt="C#">
+                         <i class="devicon-csharp-plain colored"></i>
                         <span>C#</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/javascript-logo.svg" alt="JavaScript">
+                         <i class="devicon-javascript-plain colored"></i>
                         <span>JavaScript</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/html5-logo.svg" alt="HTML5">
+                        <i class="devicon-html5-plain colored"></i>
                         <span>HTML5</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/css3-logo.svg" alt="CSS3">
+                        <i class="devicon-css3-plain colored"></i>
                         <span>CSS3</span>
                     </div>
                 </div>
@@ -130,19 +137,19 @@
                 <h3>Frameworks & Libraries</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <img src="icons/react-logo.svg" alt="React">
+                        <i class="devicon-react-original colored"></i>
                         <span>React</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/nodejs-logo.svg" alt="Node.js">
+                        <i class="devicon-nodejs-plain colored"></i>
                         <span>Node.js</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/express-logo.svg" alt="Express.js">
+                        <i class="devicon-express-original colored"></i>
                         <span>Express.js</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/bootstrap-logo.svg" alt="Bootstrap">
+                        <i class="devicon-bootstrap-plain colored"></i>
                         <span>Bootstrap</span>
                     </div>
                 </div>
@@ -152,15 +159,15 @@
                 <h3>Databases</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <img src="icons/mysql-logo.svg" alt="MySQL">
+                        <i class="devicon-mysql-plain colored"></i>
                         <span>MySQL</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/mongodb-logo.svg" alt="MongoDB">
+                        <i class="devicon-mongodb-plain colored"></i>
                         <span>MongoDB</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/postgresql-logo.svg" alt="PostgreSQL">
+                        <i class="devicon-postgresql-plain colored"></i>
                         <span>PostgreSQL</span>
                     </div>
                 </div>
@@ -170,19 +177,22 @@
                 <h3>Tools & Others</h3>
                 <div class="skill-items">
                     <div class="skill-item">
-                        <img src="icons/git-logo.svg" alt="Git">
+                        <i class="devicon-git-plain colored"></i>
                         <span>Git</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/docker-logo.svg" alt="Docker">
+                        <i class="devicon-docker-plain colored"></i>
                         <span>Docker</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/aws-logo.svg" alt="AWS">
+                        
+                       
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+          
                         <span>AWS Basics</span>
                     </div>
                     <div class="skill-item">
-                        <img src="icons/jira-logo.svg" alt="Jira">
+                        <i class="devicon-jira-plain colored"></i>
                         <span>Jira</span>
                     </div>
                 </div>
@@ -223,6 +233,61 @@
        <script>
            // Initialize AOS
            AOS.init();
+
+           AOS.init();
+
+        // --- Vanta.js Instance Variable ---
+        // This will hold our Vanta.js effect object so we can update it
+        let vantaEffect; 
+
+        // Define color settings for Vanta.js based on theme
+        // Use 0x for hexadecimal colors in Vanta.js parameters
+        const vantaColors = {
+            light: {
+                baseColor: 0xac95c8, // Your current light mode base color for Vanta
+                backgroundColor: 0xc5c5e3 // Your current light mode background color for Vanta
+            },
+            dark: {
+                baseColor: 0x0, // NEW: Dark mode base color for Vanta (adjust as needed!)
+                backgroundColor: 0x0 // NEW: Dark mode background color for Vanta (matches your body dark background)
+            }
+        };
+
+        // Function to initialize or update Vanta.js
+        function initializeOrUpdateVanta(theme) {
+            const colors = vantaColors[theme];
+            // Ensure this ID matches the element you want Vanta.js on, which is '#home' for your hero section.
+            const element = document.getElementById('home'); 
+
+            if (!element) {
+                console.warn("Vanta.js target element '#home' not found. Please check your HTML ID.");
+                return;
+            }
+
+            if (vantaEffect) {
+                // If Vanta.js is already running, update its properties
+                vantaEffect.setOptions({
+                    baseColor: colors.baseColor,
+                    backgroundColor: colors.backgroundColor
+                });
+            } else {
+                // Otherwise, initialize Vanta.js for the first time
+                vantaEffect = VANTA.HALO({
+                    el: element, 
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 0.00, // Keep these as per your original Vanta setup
+                    minWidth: 0.00,  // Keep these as per your original Vanta setup
+                    size: 1.5,       // Keep these as per your original Vanta setup
+                    amplitudeFactor: 1.0, // Keep these as per your original Vanta setup
+                    xOffset: 0.0,    // Keep these as per your original Vanta setup
+                    yOffset: -0.1,   // Keep these as per your original Vanta setup
+                    baseColor: colors.baseColor,      // Set initial color based on theme
+                    backgroundColor: colors.backgroundColor // Set initial color based on theme
+                });
+            }
+        }
 
 
 
@@ -305,6 +370,36 @@ backToTop.addEventListener('click', () => {
       xOffset: 0.0,
       yOffset: -0.1,
     });
-    </script>
+    </script>  
+
+<script>
+    // --- Dark Mode Toggle Script ---
+    const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Check for user's preferred theme in localStorage on page load
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            initializeOrUpdateVanta('dark'); // Initialize Vanta with dark mode colors
+        } else {
+            initializeOrUpdateVanta('light'); // Initialize Vanta with light mode colors
+        }
+
+        // Add a click event listener to the dark mode button
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode'); // Toggles the 'dark-mode' class on/off
+
+            // Update Vanta.js colors and save preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                initializeOrUpdateVanta('dark'); // Update Vanta.js to dark colors
+            } else {
+                localStorage.setItem('theme', 'light');
+                initializeOrUpdateVanta('light'); // Update Vanta.js to light colors
+            }
+        });
+</script>
+    
    </div></body>
    </html>
