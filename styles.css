@@ -1,3 +1,14 @@
+/* New Wrapper for the Entire Site Content */
+.site-wrapper {
+    max-width: 1200px; /* Or whatever maximum width you desire for the whole site (e.g., 960px, 1100px) */
+    margin: 0 auto;    /* Centers the entire site wrapper */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to the whole content block */
+    background-color: #fff; /* Optional: Give it a consistent background color inside the wrapper */
+    position: relative; /* Needed for z-index if sticky nav is desired later */
+    z-index: 1; /* Ensure it sits above body background */
+}
+
+
 /*styles for body and html*/
 html {
     scroll-behavior:smooth;
@@ -15,8 +26,7 @@ body{
 /*style to center content and control the width*/
 .container {
     width: 80%;
-    max-width: 1100px;
-    margin: auto;
+    margin:0 auto;
     overflow: hidden;
     padding: 0 20px;
 }
@@ -26,8 +36,6 @@ nav {
     background: #333;
     color: #fff;
     padding: 1rem 0;
-    position: sticky;
-    top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -108,11 +116,11 @@ nav ul li a:hover {
 /*About me*/
 section {
     padding: 60px 0; /* Top and bottom padding for all sections */
-    background-color: #fff; /* Default background for sections */
+    background-color: transparent; /* Default background for sections */
     border-bottom: 1px solid #eee; /* Light separator between sections */
 }
 section:nth-of-type(even) { /* Alternate background for even sections */
-    background-color: #f9f9f9;
+    background-color: transparent;
 }
 section h2 {
     text-align: center;
@@ -303,15 +311,17 @@ section h2::after {
     opacity: 0; /* Start invisible */
     max-height: 0; /* Collapse height */
     overflow: hidden; /* Hide overflow content */
-    transition: opacity 0.6s ease-out, max-height 0.6s ease-out, padding 0.6s ease-out; /* Smooth transition */
-    padding-top: 0; /* Remove padding when hidden */
-    padding-bottom: 0; /* Remove padding when hidden */
+    
+    transition: opacity 0.6s ease-out, max-height 0.6s ease-out, padding-top 0.6s ease-out, padding-bottom 0.6s ease-out;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #skills.skills-visible {
     opacity: 1; /* Become fully visible */
-    max-height: 1200px; /* Max height to allow content to show (adjust if your content is taller) */
-    padding: 60px 0; /* Restore padding when visible */
+    max-height: 2000px; /* Max height to allow content to show (adjust if your content is taller) */
+    padding-top: 60px; /* Restore padding when visible */
+    padding-bottom: 50px;
 }
 
 /* Re-add the previous skill styling for when it IS visible */
@@ -397,6 +407,7 @@ section h2::after {
     flex-wrap: wrap; /* Allow links to wrap on smaller screens */
     gap: 30px; /* Space between the social icon links */
     margin-top: 50px; /* Space from the intro paragraph */
+    padding:0 10px;
 }
 
 .social-icon-link {
@@ -558,9 +569,9 @@ section h2::after {
         padding: 30px 20px; /* Adjust internal padding for the skills box */
     }
 
-    /* Contact Section Links */
+    /* Contact Section Links  --------------------------------------*/
     #contact .contact-social-links {
-        flex-direction: column; /* Stack social links vertically */
+      
         gap: 20px; /* Adjust gap between stacked links */
     }
 
