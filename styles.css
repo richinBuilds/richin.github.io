@@ -33,8 +33,8 @@ body{
 
 /* Navigation Bar styles */
 nav {
-    background: #333;
-    color: #fff;
+    background: rgba(197, 197, 227, 1.0);
+    color: #000000;
     padding: 1rem 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -44,25 +44,43 @@ nav h1 {
     margin: 0;
     float: left;
     font-size: 1.8rem;
+    margin-top: 5px;
 }
 nav ul {
     list-style: none;
     float: right;
     margin: 0;
     padding: 0;
+    margin-top: 5px;
 }
 nav ul li {
     display: inline;
     margin-left: 20px;
 }
 nav ul li a {
-    color: #fff;
+    /* Removed duplicated 'color' and button styles. */
+    /* Starting fresh to make them transparent, round, bordered buttons. */
+
+    color: #00bcd4; /* Accent color for the text inside the transparent button */
+                   /* Changed from #000000 or #fff to ensure it's visible against various backgrounds */
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease; /* Transition 'all' properties for smoother hover effects */
+
+    /* --- Styles for the round, transparent button with border --- */
+    display: inline-block; /* Essential to apply padding, width, height, etc. */
+    background: transparent; /* Make the background transparent */
+    border: 2px solid #00bcd4; /* Add a border with your accent color */
+                               /* Adjust 2px to your desired thickness */
+    border-radius: 50px; /* Make it very rounded. Use 50% for perfect circles if width/height are equal,
+                         but 50px is safer for varying content length to get "pill" shape. */
+    padding: 8px 18px; /* Adjust padding to control the button size and internal spacing.
+                       Experiment with this to get the desired roundness. */
+    line-height: 1; /* Helps with vertical centering of text inside button */
 }
 nav ul li a:hover {
-    color: #00bcd4; /* A nice accent color for hover */
+    background: rgba(197, 197, 227, 1.0); /* Darker shade on hover */
+    transform: translateY(-3px);
 }
 
 .hero {
