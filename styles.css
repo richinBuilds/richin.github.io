@@ -1,8 +1,8 @@
 /* Color Variables */
 /* These define the default (light) theme colors */
 :root {
-    --background-color: #f4f4f4; /* Main body background */
-    --site-wrapper-bg: #fff; /* Background inside the site wrapper */
+    --background-color: #c5c5e3; /* Main body background */
+    --site-wrapper-bg: #c5c5e3; /* Background inside the site wrapper */
     --text-color: #333; /* General text color */
     --heading-color: #333; /* Color for h1, h2, h3 */
     --nav-bg: rgba(197, 197, 227, 1.0); /* Navigation bar background */
@@ -13,7 +13,7 @@
 
     --hero-text-color: #000000; /* Hero section text color */
     --hero-button-bg: rgb(142, 119, 176); /* Hero button background */
-    --hero-button-text:#00bcd4; /* Hero button text color */
+    --hero-button-text:#000000; /* Hero button text color */
     --hero-button-hover-bg: #0097a7; /* Hero button hover background */
 
     --section-border-color: #eee; /* Border between sections */
@@ -74,7 +74,7 @@ body.dark-mode {
 
     --hero-text-color: #e0e0e0;
     --hero-button-bg: #e94560; /* Dark mode accent */
-    --hero-button-text: #1a1a2e; /* Dark text on bright button */
+    --hero-button-text: #ffffff; /* Dark text on bright button */
     --hero-button-hover-bg: #cf2a46; /* Darker dark mode accent */
 
     --section-border-color: #2c3a50;
@@ -94,7 +94,7 @@ body.dark-mode {
     --skills-wrapper-bg: #212c47;
     --skills-wrapper-shadow: rgba(0, 0, 0, 0.15);
     --skills-button-bg: #e94560; /* Dark mode accent */
-    --skills-button-text: #1a1a2e;
+    --skills-button-text: #ffffff;
     --skills-button-hover-bg: #cf2a46;
     --skills-button-shadow: rgba(0, 0, 0, 0.3);
 
@@ -181,12 +181,16 @@ body{
 
 /* Navigation Bar styles */
 nav {
-    background: var(--nav-bg); /* Changed to variable */
-    color: var(--nav-text-color); /* Changed to variable */
-    padding: 1rem 0;
+    background: rgba(197, 197, 227, 0.0); /* Slightly transparent light mode nav */
+    color: var(--nav-text-color);
+    padding: 0.8rem 0; /* Reduced padding */
+    position: absolute; /* Position it absolutely relative to #home */
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px var(--project-card-shadow); /* Changed to variable */
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav h1 {
@@ -196,6 +200,8 @@ nav h1 {
     margin-top: 5px;
     color: var(--heading-color); /* Added variable */
 }
+
+
 nav ul {
     list-style: none;
     float: right;
@@ -212,7 +218,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-
+    font-size: 18px;
     display: inline-block;
     background: transparent;
     border: 2px solid var(--nav-link-border); /* Changed to variable */
@@ -229,18 +235,33 @@ nav ul li a:hover {
     color: var(--hero-text-color); /* Changed to variable */
     text-align: center;
     padding: 100px 0;
-    height: 40vh;
+    height: 60vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     position: relative;
     overflow: hidden;
+    padding-top: 0;
+}
+.hero .hero-content { /* **NEW**: Styles for the wrapped hero content */
+    position: relative; /* To bring content above Vanta.js */
+    z-index: 2; /* To bring content above Vanta.js */
+    padding-top: 150px; /* Adjust this value based on your nav's height to push content down */
+    width: 80%; /* Match container width */
+    margin: 0 auto; /* Center the content */
+    display: flex; /* Use flexbox for vertical centering within its own space */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Take full height of the hero section */
 }
 
 .hero .container {
     position: relative;
     z-index: 2;
 }
+
+
+
 .hero h2 {
     font-size: 3.5rem;
     margin-bottom: 10px;
@@ -258,7 +279,7 @@ nav ul li a:hover {
     color: var(--hero-button-text); /* Changed to variable */
     padding: 12px 25px;
     text-decoration: none;
-
+    font-size: 18px;
     font-weight: 600;
     transition: 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Added color transition */
     background: transparent;
@@ -310,6 +331,8 @@ section h2::after {
     margin: 0 auto;
     color: var(--about-text-color); /* Changed to variable */
 }
+
+
 
 /* Projects Section styles */
 #projects .project-grid {
@@ -443,8 +466,8 @@ section h2::after {
     display: block;
     width: fit-content;
     margin: 40px auto 0 auto;
-
-
+    color: var(--skills-button-text);
+    font-size: 18px;
     padding: 15px 30px;
     text-decoration: none;
     border: 2px solid var(--nav-link-border);
@@ -581,6 +604,7 @@ section h2::after {
     gap: 30px;
     margin-top: 50px;
     padding:0 10px;
+
 }
 
 .social-icon-link {
@@ -717,30 +741,46 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
 
     /* Navigation Bar */
     nav {
-        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center; /* Center the nav content */
         padding: 1rem 0.5rem;
     }
 
     nav h1 {
         float: none;
         margin-bottom: 10px;
-        color: var(--heading-color); /* Ensure variable is used */
+        color: var(--heading-color);
+        display: block; /* Ensure heading takes full width */
     }
 
     nav ul {
         float: none;
-        display: block;
+        display: flex; /* **MODIFIED**: Use flexbox to keep items in a row */
+        justify-content: center; /* Center the links */
         padding: 0;
+        margin-top: 5px; /* Adjust spacing from title */
+        flex-wrap: wrap; /* Allow wrapping if there are too many items */
     }
 
     nav ul li {
-        display: block;
-        margin: 0 0 10px 0;
+        display: inline-block;
+        margin: 0 8px 5px 8px;
     }
 
     /* Hero Section */
+    .hero {
+        padding-top: 0; /* No need for hero section itself to have top padding now */
+        height: 60vh; /* Might need to increase height a bit since nav is inside */
+    }
     .hero h2 {
         font-size: 2.5rem;
+    }
+    .hero .hero-content {
+        padding-top: 120px; /* Adjust this to push content below the nav */
+        /* Remove align-items: center; justify-content: center; from here if you want content to flow naturally */
     }
 
     .hero p {
