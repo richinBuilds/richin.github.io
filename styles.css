@@ -1,66 +1,66 @@
-/* Color Variables */
-/* These define the default (light) theme colors */
+
+/* for light mode */
 :root {
-    --background-color: #c5c5e3; /* Main body background */
-    --site-wrapper-bg: #c5c5e3; /* Background inside the site wrapper */
-    --text-color: #333; /* General text color */
-    --heading-color: #333; /* Color for h1, h2, h3 */
-    --nav-bg: rgba(197, 197, 227, 1.0); /* Navigation bar background */
-    --nav-text-color: #000000; /* Navigation text color */
-    --nav-link-color: #00bcd4; /* Color for nav links (your original accent) */
-    --nav-link-border: rgb(142, 119, 176); /* Border color for nav links */
-    --nav-link-hover-bg: rgba(197, 197, 227, 1.0); /* Nav link hover background */
+    --background-color: #c5c5e3; 
+    --site-wrapper-bg: #c5c5e3; 
+    --text-color: #333; 
+    --heading-color: #333; 
+    --nav-bg: rgba(197, 197, 227, 1.0); 
+    --nav-text-color: #000000; 
+    --nav-link-color: #00bcd4; 
+    --nav-link-border: rgb(142, 119, 176); 
+    --nav-link-hover-bg: rgba(197, 197, 227, 1.0); 
 
-    --hero-text-color: #000000; /* Hero section text color */
-    --hero-button-bg: rgb(142, 119, 176); /* Hero button background */
-    --hero-button-text:#000000; /* Hero button text color */
-    --hero-button-hover-bg: #0097a7; /* Hero button hover background */
+    --hero-text-color: #000000; 
+    --hero-button-bg: rgb(142, 119, 176); 
+    --hero-button-text:#000000; 
+    --hero-button-hover-bg: #0097a7; 
 
-    --section-border-color: #eee; /* Border between sections */
-    --section-heading-underline: #00bcd4; /* Underline for section headings */
-    --about-text-color: #333; /* About section paragraph text */
+    --section-border-color: #eee; 
+    --section-heading-underline: #00bcd4; 
+    --about-text-color: #333; 
 
-    --project-card-bg: #fff; /* Background of project cards */
-    --project-card-shadow: rgba(0, 0, 0, 0.1); /* Shadow for project cards */
-    --project-title-color: #00bcd4; /* Project title color */
-    --project-description-color: #555; /* Project description color */
-    --project-link-bg: #333; /* Project link button background */
-    --project-link-text: #fff; /* Project link button text */
-    --project-link-hover-bg: #555; /* Project link button hover background */
-    --project-tech-logo-opacity: 0.7; /* Opacity for tech logos */
-    --project-tech-logo-hover-opacity: 1; /* Hover opacity for tech logos */
+    --project-card-bg: #fff; 
+    --project-card-shadow: rgba(0, 0, 0, 0.1); 
+    --project-title-color: #00bcd4; 
+    --project-description-color: #555; 
+    --project-link-bg: #333; 
+    --project-link-text: #fff; 
+    --project-link-hover-bg: #555; 
+    --project-tech-logo-opacity: 0.7; 
+    --project-tech-logo-hover-opacity: 1; 
 
-    --skills-wrapper-bg: #e9e9e9; /* Background for the skills content wrapper */
-    --skills-wrapper-shadow: rgba(0, 0, 0, 0.05); /* Inner shadow for skills wrapper */
-    --skills-button-bg: rgb(142, 119, 176); /* Show Skills button background */
-    --skills-button-text: #0097a7; /* Show Skills button text */
-    --skills-button-hover-bg: #0097a7; /* Show Skills button hover background */
-    --skills-button-shadow: rgba(0, 0, 0, 0.1); /* Show Skills button shadow */
+    --skills-wrapper-bg: #e9e9e9; 
+    --skills-wrapper-shadow: rgba(0, 0, 0, 0.05); 
+    --skills-button-bg: rgb(142, 119, 176); 
+    --skills-button-text: #0097a7; 
+    --skills-button-hover-bg: #0097a7; 
+    --skills-button-shadow: rgba(0, 0, 0, 0.1); 
 
-    --skill-category-bg: #fff; /* Background for individual skill categories */
-    --skill-category-shadow: rgba(0, 0, 0, 0.08); /* Shadow for skill categories */
-    --skill-category-heading-color: #333; /* Skill category heading color */
-    --skill-category-underline: #00bcd4; /* Underline for skill category headings */
-    --skill-item-text: #666; /* Text color for skill names */
-    --skill-icon-color-default: #555; /* Default color for skill icons (if not using devicon 'colored') */
+    --skill-category-bg: #fff; 
+    --skill-category-shadow: rgba(0, 0, 0, 0.08); 
+    --skill-category-heading-color: #333; 
+    --skill-category-underline: #00bcd4; 
+    --skill-item-text: #666; 
+    --skill-icon-color-default: #555; 
 
-    --contact-intro-color: #555; /* Intro paragraph in contact section */
-    --social-link-text-color: #333; /* Social link text color */
-    --social-icon-color-default: #00bcd4; /* Default social icon color */
-    --social-link-hover-color: #0097a7; /* Social link hover color */
+    --contact-intro-color: #555; 
+    --social-link-text-color: #333; 
+    --social-icon-color-default: #00bcd4; 
+    --social-link-hover-color: #0097a7; 
 
-    /* Specific brand colors (if you want them to remain distinct in light mode) */
+    
     --email-icon-color: #D44638;
     --linkedin-icon-color: #0A66C2;
     --github-icon-color: #181717;
 
-    --back-to-top-bg: #333; /* Back to top button background */
-    --back-to-top-text: #fff; /* Back to top button text */
-    --back-to-top-shadow: rgba(0, 0, 0, 0.3); /* Back to top button shadow */
-    --back-to-top-hover-bg: #00bcd4; /* Back to top button hover background */
+    --back-to-top-bg: #333; 
+    --back-to-top-text: #fff; 
+    --back-to-top-shadow: rgba(0, 0, 0, 0.3); 
+    --back-to-top-hover-bg: #00bcd4; 
 }
 
-/* Dark Mode Colors */
+/* Dark mode */
 body.dark-mode {
     --background-color: #1a1a2e;
     --site-wrapper-bg: #16213e;
@@ -68,32 +68,32 @@ body.dark-mode {
     --heading-color: #e0e0e0;
     --nav-bg: #000000;
     --nav-text-color: #e0e0e0;
-    --nav-link-color: #e94560; /* Dark mode accent */
-    --nav-link-border: #e94560; /* Dark mode accent */
-    --nav-link-hover-bg: #1a1a2e; /* Slightly lighter dark mode background for nav hover */
+    --nav-link-color: #e94560; 
+    --nav-link-border: #e94560; 
+    --nav-link-hover-bg: #1a1a2e; 
 
     --hero-text-color: #e0e0e0;
-    --hero-button-bg: #e94560; /* Dark mode accent */
-    --hero-button-text: #ffffff; /* Dark text on bright button */
-    --hero-button-hover-bg: #cf2a46; /* Darker dark mode accent */
+    --hero-button-bg: #e94560; 
+    --hero-button-text: #ffffff; 
+    --hero-button-hover-bg: #cf2a46; 
 
     --section-border-color: #2c3a50;
-    --section-heading-underline: #e94560; /* Dark mode accent */
+    --section-heading-underline: #e94560; 
     --about-text-color: #e0e0e0;
 
     --project-card-bg: #212c47;
     --project-card-shadow: rgba(0, 0, 0, 0.3);
-    --project-title-color: #e94560; /* Dark mode accent */
+    --project-title-color: #e94560; 
     --project-description-color: #acacac;
     --project-link-bg: #4a5d77;
     --project-link-text: #e0e0e0;
     --project-link-hover-bg: #6e84a2;
-    --project-tech-logo-opacity: 0.8; /* Slightly less dim in dark mode */
+    --project-tech-logo-opacity: 0.8; 
     --project-tech-logo-hover-opacity: 1;
 
     --skills-wrapper-bg: #212c47;
     --skills-wrapper-shadow: rgba(0, 0, 0, 0.15);
-    --skills-button-bg: #e94560; /* Dark mode accent */
+    --skills-button-bg: #e94560; 
     --skills-button-text: #ffffff;
     --skills-button-hover-bg: #cf2a46;
     --skills-button-shadow: rgba(0, 0, 0, 0.3);
@@ -101,27 +101,27 @@ body.dark-mode {
     --skill-category-bg: #2c3a50;
     --skill-category-shadow: rgba(0, 0, 0, 0.2);
     --skill-category-heading-color: #e0e0e0;
-    --skill-category-underline: #e94560; /* Dark mode accent */
+    --skill-category-underline: #e94560; 
     --skill-item-text: #e0e0e0;
     --skill-icon-color-default: #acacac;
 
     --contact-intro-color: #acacac;
     --social-link-text-color: #e0e0e0;
-    --social-icon-color-default: #e94560; /* Dark mode accent */
+    --social-icon-color-default: #e94560; 
     --social-link-hover-color: #cf2a46;
 
-    /* Specific brand colors (if you want them to be softer or different in dark mode) */
-    --email-icon-color: #f77e7e; /* Softer red for dark mode */
-    --linkedin-icon-color: #6daee9; /* Softer blue for dark mode */
-    --github-icon-color: #cccccc; /* Lighter grey for dark mode */
+    
+    --email-icon-color: #f77e7e; 
+    --linkedin-icon-color: #6daee9; 
+    --github-icon-color: #cccccc; 
 
     --back-to-top-bg: #4a5d77;
     --back-to-top-text: #e0e0e0;
     --back-to-top-shadow: rgba(0, 0, 0, 0.5);
     --back-to-top-hover-bg: #6e84a2;
 
-    /* Override devicon-colored for dark mode if you want a different accent */
-    /* If you find the Devicon colored icons too bright in dark mode, you can apply a filter: */
+    
+     /* Slight dimming on tech icons in dark mode for better blending */
     .devicon-python-plain.colored,
     .devicon-java-plain.colored,
     .devicon-csharp-plain.colored,
@@ -139,23 +139,20 @@ body.dark-mode {
     .devicon-docker-plain.colored,
     .devicon-amazonwebservices-original.colored,
     .devicon-jira-plain.colored {
-        filter: brightness(0.8) saturate(1.2); /* Adjust brightness/saturation */
-        /* Or set a specific color if you want complete control: */
-        /* color: #f0f0f0 !important; /* Use !important only if Devicon's default `color` overrides this */
+        filter: brightness(0.8) saturate(1.2); 
+        
+        
     }
 }
-
-
-/* Your Existing CSS, but with variables applied */
 
 .site-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 0 20px var(--project-card-shadow); /* Changed to variable */
-    background-color: var(--site-wrapper-bg); /* Changed to variable */
+    box-shadow: 0 0 20px var(--project-card-shadow); 
+    background-color: var(--site-wrapper-bg); 
     position: relative;
     z-index: 1;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
@@ -167,9 +164,9 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     line-height: 1.6;
-    background-color: var(--background-color); /* Changed to variable */
-    color: var(--text-color); /* Changed to variable */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .container {
@@ -178,13 +175,13 @@ body{
     overflow: hidden;
     padding: 0 20px;
 }
+/* Nav brand/title */
 
-/* Navigation Bar styles */
 nav {
-    background: rgba(197, 197, 227, 0.0); /* Slightly transparent light mode nav */
+    background: rgba(197, 197, 227, 0.0); 
     color: var(--nav-text-color);
-    padding: 0.8rem 0; /* Reduced padding */
-    position: absolute; /* Position it absolutely relative to #home */
+    padding: 0.8rem 0; 
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -198,7 +195,7 @@ nav h1 {
     float: left;
     font-size: 1.8rem;
     margin-top: 5px;
-    color: var(--heading-color); /* Added variable */
+    color: var(--heading-color); 
 }
 
 
@@ -214,25 +211,25 @@ nav ul li {
     margin-left: 20px;
 }
 nav ul li a {
-    color: var(--nav-link-color); /* Changed to variable */
+    color: var(--nav-link-color); 
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
     font-size: 18px;
     display: inline-block;
     background: transparent;
-    border: 2px solid var(--nav-link-border); /* Changed to variable */
+    border: 2px solid var(--nav-link-border); 
     border-radius: 50px;
     padding: 8px 18px;
     line-height: 1;
 }
 nav ul li a:hover {
-    background: var(--nav-link-hover-bg); /* Changed to variable */
+    background: var(--nav-link-hover-bg); 
     transform: translateY(-3px);
 }
-
+/* Hero section styling */
 .hero {
-    color: var(--hero-text-color); /* Changed to variable */
+    color: var(--hero-text-color); 
     text-align: center;
     padding: 100px 0;
     height: 60vh;
@@ -242,17 +239,17 @@ nav ul li a:hover {
     overflow: hidden;
     padding-top: 0;
 }
-.hero .hero-content { /* **NEW**: Styles for the wrapped hero content */
-    position: relative; /* To bring content above Vanta.js */
-    z-index: 2; /* To bring content above Vanta.js */
-    padding-top: 150px; /* Adjust this value based on your nav's height to push content down */
-    width: 80%; /* Match container width */
-    margin: 0 auto; /* Center the content */
-    display: flex; /* Use flexbox for vertical centering within its own space */
+.hero .hero-content { 
+    position: relative; 
+    z-index: 2; 
+    padding-top: 150px; 
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Take full height of the hero section */
+    height: 100%; 
 }
 
 .hero .container {
@@ -260,42 +257,41 @@ nav ul li a:hover {
     z-index: 2;
 }
 
-
-
 .hero h2 {
     font-size: 3.5rem;
     margin-bottom: 10px;
     font-weight: 700;
-    color: var(--heading-color); /* Changed to variable */
+    color: var(--heading-color); 
 }
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    color: var(--hero-text-color); /* Changed to variable */
+    color: var(--hero-text-color); 
 }
 .hero a {
     display: inline-block;
     
-    color: var(--hero-button-text); /* Changed to variable */
+    color: var(--hero-button-text); 
     padding: 12px 25px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    transition: 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Added color transition */
+    transition: 0.3s ease, transform 0.3s ease, color 0.3s ease; 
     background: transparent;
     border: 2px solid var(--nav-link-border); 
     border-radius: 50px;
 }
 .hero a:hover {
-    background: var(--hero-button-hover-bg); /* Changed to variable */
+    background: var(--hero-button-hover-bg); 
     transform: translateY(-3px);
 }
 
+/* Section base styles */
 section {
     padding: 60px 0;
     background-color: transparent;
-  /*  border-bottom: 1px solid var(--section-border-color);  Changed to variable */
-  /*  transition: border-color 0.3s ease;  Add transition */
+  
+  
 }
 section:nth-of-type(even) {
     background-color: transparent;
@@ -304,10 +300,10 @@ section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: var(--heading-color); /* Changed to variable */
+    color: var(--heading-color); 
     position: relative;
     padding-bottom: 10px;
-    transition: color 0.3s ease; /* Add transition */
+    transition: color 0.3s ease; 
 }
 section h2::after {
     content: '';
@@ -317,24 +313,23 @@ section h2::after {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: var(--section-heading-underline); /* Changed to variable */
+    background-color: var(--section-heading-underline); 
     border-radius: 2px;
-    transition: background-color 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease; 
 }
 
-/* About Section specific styles */
+
 #about p {
     font-size: 1.1rem;
     line-height: 1.8;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    color: var(--about-text-color); /* Changed to variable */
+    color: var(--about-text-color); 
 }
 
+/* Projects grid layout */
 
-
-/* Projects Section styles */
 #projects .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -342,11 +337,11 @@ section h2::after {
 }
 
 .project-card {
-    background: var(--project-card-bg); /* Changed to variable */
+    background: var(--project-card-bg); 
     border-radius: 8px;
-    box-shadow: 0 4px 15px var(--project-card-shadow); /* Changed to variable */
+    box-shadow: 0 4px 15px var(--project-card-shadow); 
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Add background transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -355,7 +350,7 @@ section h2::after {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px var(--project-card-shadow); /* Changed to variable */
+    box-shadow: 0 8px 25px var(--project-card-shadow); 
 }
 
 .project-card .project-image {
@@ -368,21 +363,21 @@ section h2::after {
 }
 
 .project-card h3 {
-    color: var(--project-title-color); /* Changed to variable */
+    color: var(--project-title-color); 
     margin-top: 0;
     font-size: 1.8rem;
     margin-bottom: 15px;
     padding: 0 20px;
-    transition: color 0.3s ease; /* Add transition */
+    transition: color 0.3s ease; 
 }
 
 .project-card p {
     font-size: 1rem;
-    color: var(--project-description-color); /* Changed to variable */
+    color: var(--project-description-color); 
     margin-bottom: 20px;
     flex-grow: 1;
     padding: 0 20px;
-    transition: color 0.3s ease; /* Add transition */
+    transition: color 0.3s ease; 
 }
 
 .project-card p {
@@ -402,7 +397,7 @@ section h2::after {
   }
   
   .tech-logos i {
-    font-size: 4em; /* INCREASED SIZE */
+    font-size: 4em; 
     opacity: 0.85;
     transition: opacity 0.3s ease;
   }
@@ -413,30 +408,30 @@ section h2::after {
 
 .project-card a {
     display: inline-block;
-    background: var(--project-link-bg); /* Changed to variable */
-    color: var(--project-link-text); /* Changed to variable */
+    background: var(--project-link-bg); 
+    color: var(--project-link-text); 
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 500;
-    transition: background 0.3s ease, color 0.3s ease; /* Add color transition */
+    transition: background 0.3s ease, color 0.3s ease; 
     margin-top: auto;
     margin-bottom: 20px;
 }
 
 .project-card a:hover {
-    background: var(--project-link-hover-bg); /* Changed to variable */
+    background: var(--project-link-hover-bg); 
 }
 
-/* Skills Section styles */
+/* Skills section wrapper styling */
 #skills .skills-content-wrapper {
-    background-color: var(--skills-wrapper-bg); /* Changed to variable */
+    background-color: var(--skills-wrapper-bg); 
     padding: 50px 30px;
     border-radius: 12px;
-    box-shadow: inset 0 0 10px var(--skills-wrapper-shadow); /* Changed to variable */
+    box-shadow: inset 0 0 10px var(--skills-wrapper-shadow); 
     margin-top: 20px;
     margin-bottom: 20px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 #skills .skills-categories {
@@ -458,8 +453,8 @@ section h2::after {
 
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Add color transition */
-    box-shadow: 0 4px 10px var(--skills-button-shadow); /* Changed to variable */
+    transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; 
+    box-shadow: 0 4px 10px var(--skills-button-shadow); 
     background: transparent;
      
     border-radius: 50px;
@@ -469,10 +464,10 @@ section h2::after {
 #skills .nav-button:hover, #showSkillsBtn:hover {
 
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px var(--skills-button-shadow); /* Changed to variable */
+    box-shadow: 0 6px 15px var(--skills-button-shadow); 
 }
 
-/* Skills Section - Initial hidden state and transition */
+
 #skills {
     opacity: 0;
     max-height: 0;
@@ -489,7 +484,7 @@ section h2::after {
     padding-bottom: 50px;
 }
 
-/* Re-add the previous skill styling for when it IS visible */
+
 #skills .skills-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -498,22 +493,22 @@ section h2::after {
 }
 
 .skill-category {
-    background-color: var(--skill-category-bg); /* Changed to variable */
+    background-color: var(--skill-category-bg); 
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px var(--skill-category-shadow); /* Changed to variable */
+    box-shadow: 0 5px 20px var(--skill-category-shadow); 
     text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .skill-category h3 {
-    color: var(--skill-category-heading-color); /* Changed to variable */
+    color: var(--skill-category-heading-color); 
     font-size: 1.8rem;
     margin-top: 0;
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
-    transition: color 0.3s ease; /* Add transition */
+    transition: color 0.3s ease; 
 }
 
 .skill-category h3::after {
@@ -524,9 +519,9 @@ section h2::after {
     transform: translateX(-50%);
     width: 40px;
     height: 3px;
-    background-color: var(--skill-category-underline); /* Changed to variable */
+    background-color: var(--skill-category-underline); 
     border-radius: 2px;
-    transition: background-color 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease; 
 }
 
 .skill-items {
@@ -537,30 +532,30 @@ section h2::after {
 }
 
 .skill-item {
-    display: flex;             /* Makes it a flex container */
-    flex-direction: column;    /* Stacks children (icon and text) vertically */
-    align-items: center;       /* Horizontally centers children within the skill-item */
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
     text-align: center;
     
-    transition: transform 0.2s ease; /* Add transition for hover effect */
+    transition: transform 0.2s ease; 
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
 }
 
-.skill-item i { /* For Devicon/Font Awesome icons */
-    font-size: 3.5em; /* **THIS IS CRUCIAL** - Controls the icon size. Adjust as needed. */
+.skill-item i { 
+    font-size: 3.5em; 
    
     margin-bottom: 8px;
-    color: var(--skill-icon-color-default); /* Use variable for default color */
+    color: var(--skill-icon-color-default); 
     transition: color 0.2s ease, filter 0.2s ease;
 }
 
-/* If you still have images for skill logos, keep this block */
+
 .skill-item img {
-    width: 100px; /* Adjusted from 50px as it was too small */
-    height: 100px; /* Adjusted from 50px */
+    width: 100px; 
+    height: 100px; 
     object-fit: contain;
     margin-bottom: 8px;
     filter: grayscale(80%);
@@ -573,13 +568,13 @@ section h2::after {
 
 .skill-item span {
     font-size: 0.9rem;
-    color: var(--skill-item-text); /* Changed to variable */
+    color: var(--skill-item-text); 
     font-weight: 500;
      white-space: nowrap;
-    transition: color 0.3s ease; /* Add transition */
+    transition: color 0.3s ease; 
 }
 
-/* Contact Section Social Links */
+/*contact section*/
 #contact .contact-social-links {
     display: flex;
     justify-content: center;
@@ -595,7 +590,7 @@ section h2::after {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: var(--social-link-text-color); /* Changed to variable */
+    color: var(--social-link-text-color); 
     font-size: 1.1rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -604,7 +599,7 @@ section h2::after {
 .social-icon-link .fab {
     font-size: 3.5rem;
     margin-bottom: 10px;
-    color: var(--social-icon-color-default); /* Changed to variable */
+    color: var(--social-icon-color-default); 
     transition: color 0.3s ease;
 }
 
@@ -614,40 +609,40 @@ section h2::after {
 
 .social-icon-link:hover {
     transform: translateY(-8px);
-    color: var(--social-link-hover-color); /* Changed to variable */
+    color: var(--social-link-hover-color); 
 }
 
 .social-icon-link:hover .fas,
 .social-icon-link:hover .fab {
-    color: var(--social-link-hover-color); /* Changed to variable */
+    color: var(--social-link-hover-color); 
 }
 
-/* You can target specific icons for different colors if desired, e.g.: */
+
 .social-icon-link[href^="mailto:"] .fas {
-    color: var(--email-icon-color); /* Changed to variable */
+    color: var(--email-icon-color); 
 }
 .social-icon-link[href*="linkedin.com"] .fab {
-    color: var(--linkedin-icon-color); /* Changed to variable */
+    color: var(--linkedin-icon-color); 
 }
 .social-icon-link[href*="github.com"] .fab {
-    color: var(--github-icon-color); /* Changed to variable */
+    color: var(--github-icon-color); 
 }
 
-/* On hover, they'll still go to the accent color defined above, or you can adjust */
+
 .social-icon-link[href^="mailto:"]:hover .fas,
 .social-icon-link[href*="linkedin.com"]:hover .fab,
 .social-icon-link[href*="github.com"]:hover .fab {
-    color: var(--social-link-hover-color); /* Changed to variable */
+    color: var(--social-link-hover-color); 
 }
 
-/* Adjustments for the intro paragraph in contact section */
+
 #contact .contact-intro {
     text-align: center;
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 30px auto;
-    color: var(--contact-intro-color); /* Changed to variable */
-    transition: color 0.3s ease; /* Add transition */
+    color: var(--contact-intro-color); 
+    transition: color 0.3s ease; 
 }
 
 /*back to top button*/
@@ -655,8 +650,8 @@ section h2::after {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: var(--back-to-top-bg); /* Changed to variable */
-    color: var(--back-to-top-text); /* Changed to variable */
+    background-color: var(--back-to-top-bg); 
+    color: var(--back-to-top-text); 
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -666,8 +661,8 @@ section h2::after {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px var(--back-to-top-shadow); /* Changed to variable */
-    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added color and box-shadow transition */
+    box-shadow: 0 4px 8px var(--back-to-top-shadow); 
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
     z-index: 999;
     opacity: 0;
     pointer-events: none;
@@ -679,11 +674,11 @@ section h2::after {
 }
 
 .back-to-top:hover {
-    background-color: var(--back-to-top-hover-bg); /* Changed to variable */
+    background-color: var(--back-to-top-hover-bg); 
     transform: translateY(-3px);
 }
 
-/* Dark Mode Toggle Button Styling (from previous response) */
+
 .dark-mode-toggle {
     background: transparent;
     border: none;
@@ -700,8 +695,8 @@ section h2::after {
 }
 
 .dark-mode-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Slightly darken on hover regardless of mode */
-    color: var(--nav-link-color); /* Highlight with the primary accent color */
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: var(--nav-link-color); 
 }
 
 .dark-mode-toggle .fas {
@@ -709,26 +704,24 @@ section h2::after {
 }
 
 body.dark-mode .dark-mode-toggle .fa-moon:before {
-    content: "\f185"; /* Unicode for fa-sun */
+    content: "\f185"; 
 }
 
 
-/* --- Media Queries for Responsiveness --- */
 
-/* For screens smaller than 768px (e.g., tablets in portrait, large phones) */
 @media (max-width: 768px) {
     .container {
         width: 90%;
         padding: 0 15px;
     }
 
-    /* Navigation Bar */
+   /* Navbar positioned at top, full width, centered text */  
     nav {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        text-align: center; /* Center the nav content */
+        text-align: center; 
         padding: 1rem 0.5rem;
     }
 
@@ -736,73 +729,73 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
         float: none;
         margin-bottom: 10px;
         color: var(--heading-color);
-        display: block; /* Ensure heading takes full width */
+        display: block; 
     }
 
     nav ul {
         float: none;
-        display: flex; /* **MODIFIED**: Use flexbox to keep items in a row */
-        justify-content: center; /* Center the links */
+        display: flex; 
+        justify-content: center; 
         padding: 0;
-        margin-top: 5px; /* Adjust spacing from title */
-        flex-wrap: wrap; /* Allow wrapping if there are too many items */
+        margin-top: 5px; 
+        flex-wrap: wrap; 
     }
 
     nav ul li {
         display: inline-block;
         margin: 0 8px 5px 8px;
     }
-
-    /* Hero Section */
+/* Hero section tweaks for smaller vertical padding */
+    
     .hero {
-        padding-top: 0; /* No need for hero section itself to have top padding now */
-        height: 60vh; /* Might need to increase height a bit since nav is inside */
+        padding-top: 0; 
+        height: 60vh; 
     }
     .hero h2 {
         font-size: 2.5rem;
     }
     .hero .hero-content {
-        padding-top: 120px; /* Adjust this to push content below the nav */
-        /* Remove align-items: center; justify-content: center; from here if you want content to flow naturally */
+        padding-top: 120px; 
+        
     }
 
     .hero p {
         font-size: 1.2rem;
     }
 
-    /* General Section Headings */
+    
     section h2 {
         font-size: 2rem;
     }
 
-    /* Projects Grid */
+    /* Projects grid changes to single column for narrow view */
     #projects .project-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Project Cards specific adjustments for smaller screens */
+    
     .project-card .project-image {
         height: 250px;
     }
 
-    /* Skills Categories Grid */
+    
     #skills .skills-categories {
         grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    /* Skills Content Wrapper */
+    
     #skills .skills-content-wrapper {
         padding: 30px 20px;
-        background-color: var(--skills-wrapper-bg); /* Ensure variable is used */
+        background-color: var(--skills-wrapper-bg); 
     }
 
-    /* Contact Section Links */
+    
     #contact .contact-social-links {
         gap: 20px;
     }
 
-    /* Back to Top Button */
+    
     .back-to-top {
         width: 45px;
         height: 45px;
@@ -812,9 +805,10 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
     }
 }
 
-/* For even smaller screens (e.g., typical mobile phones) */
+/* Styles for very small screens */
+
 @media (max-width: 480px) {
-    /* Hero Section */
+    
     .hero h2 {
         font-size: 2rem;
     }
@@ -823,12 +817,12 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
         font-size: 1rem;
     }
 
-    /* General Section Headings */
+    
     section h2 {
         font-size: 1.8rem;
     }
 
-    /* Project Cards */
+    
     .project-card .project-image {
         height: 180px;
     }
@@ -837,13 +831,13 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
         font-size: 1.5rem;
     }
 
-    /* Skill Items */
+    
     /* .skill-item {
         width: 70px;
     } */
 
-    .skill-item i { /* For Devicon/Font Awesome icons */
-        font-size: 3.5em; /* Adjusted icon size for mobile */
+    .skill-item i { 
+        font-size: 3.5em; 
     }
 
     .skill-item img {
@@ -855,7 +849,7 @@ body.dark-mode .dark-mode-toggle .fa-moon:before {
         font-size: 0.8rem;
     }
 
-    /* Contact Social Icons */
+    
     .social-icon-link .fas,
     .social-icon-link .fab {
         font-size: 2.8rem;
