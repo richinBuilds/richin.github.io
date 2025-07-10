@@ -385,48 +385,31 @@ section h2::after {
     transition: color 0.3s ease; /* Add transition */
 }
 
-.project-card .tech-logos {
-    margin-top: 15px;
-    margin-bottom: 25px;
+.project-card p {
+    font-size: 1rem;
+    color: var(--project-description-color);
+    margin-bottom: 20px;
     padding: 0 20px;
+    flex-grow: 1;
+  }
+  
+  .tech-logos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-}
-
-/* For Devicon/Font Awesome icons in project cards */
-.project-card .tech-logos .devicon,
-.project-card .tech-logos .fab,
-.project-card .tech-logos .fas {
-    font-size: 2.2em;
-    margin: 0 5px;
-    /* Devicon 'colored' class overrides `color`.
-       If you want them to behave like other colors in dark mode,
-       you might need to add specific overrides in body.dark-mode
-       or remove the 'colored' class from HTML and rely on generic styling. */
-    opacity: var(--project-tech-logo-opacity); /* Use variable */
-    transition: opacity 0.3s ease, filter 0.3s ease; /* Add filter transition */
-}
-
-.project-card .tech-logos .devicon:hover,
-.project-card .tech-logos .fab:hover,
-.project-card .tech-logos .fas:hover {
-    opacity: var(--project-tech-logo-hover-opacity); /* Use variable */
-    filter: none; /* Remove any filter on hover */
-}
-
-/* If you still have .tech-logo images, keep this */
-.project-card .tech-logo {
-    height: 30px;
-    width: auto;
-    opacity: var(--project-tech-logo-opacity); /* Use variable */
+    gap: 15px;
+    padding: 0 20px 25px;
+  }
+  
+  .tech-logos i {
+    font-size: 4em; /* INCREASED SIZE */
+    opacity: 0.85;
     transition: opacity 0.3s ease;
-}
-
-.project-card .tech-logo:hover {
-    opacity: var(--project-tech-logo-hover-opacity); /* Use variable */
-}
+  }
+  
+  .tech-logos i:hover {
+    opacity: 0.5;
+  }
 
 .project-card a {
     display: inline-block;
