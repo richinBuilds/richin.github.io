@@ -20,10 +20,10 @@
     --section-heading-underline: #00bcd4; 
     --about-text-color: #333; 
 
-    --project-card-bg: #fff; 
+    --project-card-bg: rgb(173, 173, 200); 
     --project-card-shadow: rgba(0, 0, 0, 0.1); 
-    --project-title-color: #00bcd4; 
-    --project-description-color: #555; 
+    --project-title-color: #044750; 
+    --project-description-color: #000000; 
     --project-link-bg: #333; 
     --project-link-text: #fff; 
     --project-link-hover-bg: #555; 
@@ -37,11 +37,11 @@
     --skills-button-hover-bg: #0097a7; 
     --skills-button-shadow: rgba(0, 0, 0, 0.1); 
 
-    --skill-category-bg: #fff; 
+    --skill-category-bg: rgb(173, 173, 200); 
     --skill-category-shadow: rgba(0, 0, 0, 0.08); 
     --skill-category-heading-color: #333; 
     --skill-category-underline: #00bcd4; 
-    --skill-item-text: #666; 
+    --skill-item-text: #000000; 
     --skill-icon-color-default: #555; 
 
     --contact-intro-color: #555; 
